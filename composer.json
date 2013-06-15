@@ -1,0 +1,8 @@
+{
+   "name"               : "pixeloution/lararoute",
+   "minimum-stability"  : "dev",
+   "autoload" : 
+   {
+      "psr-0"           : { "Pixeloution" : "src/" }
+   }   
+}
