@@ -4,14 +4,22 @@ Adds some new features/syntax to the standard laravel-4 router
 
 ## Install
 
-Add the library to the require in your composer.json, and add the post-install
+Add the github URL to repositories, library to the require in your composer.json, and add the post-install
 script to scripts within composer.json.
+
+    
+    "repositories": [
+    {
+        "type": "git",
+        "url": "https://github.com/pixeloution/laravel-custom-router.git"
+    }
 
     "require" : 
     {
        "pixeloution/lararoute" : "*"
     }
 
+    // this is optional - can also use method described below
     "scripts" : {
        "post-install-cmd" : [
           "Pixeloution\\Lararoute\\LararouteInstaller::postPackageInstall" 
