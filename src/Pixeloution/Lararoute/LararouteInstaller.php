@@ -5,7 +5,18 @@ class LararouteInstaller
    static public function postPackageInstall()
    {
       echo "Modifying app/config/app.php with ServiceProvider \n";
-      $tokens = token_get_all( file_get_contents('app/config/app.php') );
+      
+      $file   = file_get_contents('app/config/app.php');
+      $pattern= '% Pixeloution\\Lararoute\\RoutingServiceProvider %sx'
+      
+      if( preg_match( $pattern, $file) )
+      {
+         echo "Routing Service Provider setting already set";
+         return;
+      }
+      
+      
+      $tokens = token_get_all( $file );
       $output = [];
 
       foreach ($tokens as $token) 
