@@ -9,10 +9,11 @@ script to scripts within composer.json.
 
     
     "repositories": [
-    {
-        "type": "git",
-        "url": "https://github.com/pixeloution/laravel-custom-router.git"
-    }
+        {
+            "type": "git",
+            "url": "https://github.com/pixeloution/laravel-custom-router.git"
+        }
+    ],
 
     "require" : 
     {
