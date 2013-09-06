@@ -10,9 +10,7 @@ class RoutingServiceProvider extends \Illuminate\Support\ServiceProvider {
    public function register()
    {
       $this->registerRouter();
-
       $this->registerUrlGenerator();
-
       $this->registerRedirector();
    }
 
