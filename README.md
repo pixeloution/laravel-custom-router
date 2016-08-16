@@ -41,7 +41,7 @@ write the routes in a more simple fashion.
 
     // this is the same as ...
     Route::get( 'about/directions', 'pages@show' );
-    Route::get( 'about/directions', 'pages@show' );
+    Route::get( 'people/managers', 'pages@show' );
 
 ## Alternate route parameters syntax
 Allows the use of :parameter syntax in routes. 
